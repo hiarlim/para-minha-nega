@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lover Is a Day ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient pink"></div>
+  <div class="ambient blue"></div>
+  <div class="grain"></div>
+
+  <main>
+    <section class="player" id="player">
+      <video id="video" playsinline preload="metadata">
+        <source src="lover-is-a-day.mp4" type="video/mp4">
+      </video>
+
+      <div class="vignette"></div>
+      <div class="topbar">
+        <span>lover is a day</span>
+        <span class="heart">♡</span>
+      </div>
+
+      <button class="big-play" id="bigPlay" aria-label="Reproduzir">▶</button>
+
+      <div class="bottom">
+        <div class="progress-wrap" id="progressWrap">
+          <div class="progress"><span id="progress"></span></div>
+        </div>
+        <div class="controls">
+          <button id="play" aria-label="Reproduzir">▶</button>
+          <span id="current">0:00</span>
+          <span class="slash">/</span>
+          <span id="duration">0:00</span>
+          <span class="spacer"></span>
+          <button id="mute" aria-label="Som">♫</button>
+          <button id="fullscreen" aria-label="Tela cheia">⛶</button>
+        </div>
+      </div>
+    </section>
+
+    <p class="caption">um momento para ouvir até o fim</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
