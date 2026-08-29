@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lover Is a Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg pink"></div><div class="bg blue"></div><div class="grain"></div>
+<main>
+  <section class="lyrics" id="lyrics">
+    <div class="line previous" id="previous"></div>
+    <div class="line current" id="current"></div>
+    <div class="line next" id="next"></div>
+  </section>
+
+  <div class="hearts" id="hearts"></div>
+
+  <button class="start" id="start">♡<span>tap to play</span></button>
+
+  <footer>
+    <button id="play">▶</button>
+    <div class="bar" id="bar"><span id="fill"></span></div>
+    <span id="clock">0:00</span>
+    <button id="sound">♫</button>
+  </footer>
+</main>
+<audio id="audio" preload="metadata" src="music.m4a"></audio>
+<script src="script.js"></script>
+</body>
+</html>
