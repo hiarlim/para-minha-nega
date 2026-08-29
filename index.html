@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lover Is a Day ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="scene">
+  <div class="orb pink"></div>
+  <div class="orb blue"></div>
+  <div class="noise"></div>
+
+  <div class="frame">
+    <div class="top"></div>
+    <video id="video" playsinline preload="auto">
+      <source src="lover-is-a-day.mp4" type="video/mp4">
+    </video>
+    <div class="shade"></div>
+    <div class="title">lover is a day <span>♡</span></div>
+    <button id="centerPlay" class="centerPlay">▶</button>
+  </div>
+
+  <div class="controls">
+    <button id="play">▶</button>
+    <div class="track" id="track"><span id="fill"></span></div>
+    <span id="time">0:00</span>
+  </div>
+  <p class="hint">toque para começar</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

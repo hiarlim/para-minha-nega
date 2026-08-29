@@ -1,0 +1,36 @@
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{background:#05050a;color:#fff;font-family:Inter,sans-serif}
+.scene{position:relative;width:100%;height:100%;display:grid;place-items:center;
+background:radial-gradient(circle at 50% 50%,#19162a 0,#0a0911 45%,#020207 82%)}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);opacity:.2;pointer-events:none}
+.pink{width:45vw;height:45vw;background:#ff4f9f;left:-18vw;top:22vh}
+.blue{width:45vw;height:45vw;background:#3c7dff;right:-18vw;bottom:12vh}
+.frame{position:relative;width:min(920px,92vw);height:min(518px,62vh);overflow:hidden;
+border:1px solid #ffffff20;background:#09090d;box-shadow:0 30px 100px #000e;
+transform:perspective(1000px) rotateX(2deg) rotateZ(-.5deg)}
+video{width:100%;height:100%;object-fit:cover;display:block}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,#0005,transparent 35%,#0005);
+pointer-events:none}
+.top{position:absolute;z-index:4;top:0;left:0;width:100%;height:2px;
+background:linear-gradient(90deg,transparent,#ff65b0,#6498ff,transparent)}
+.title{position:absolute;z-index:4;left:22px;top:18px;font-family:"Cormorant Garamond",serif;
+font-size:18px;letter-spacing:.04em;text-shadow:0 2px 12px #000}
+.title span{color:#ff82bd}
+.centerPlay{position:absolute;z-index:5;left:50%;top:50%;transform:translate(-50%,-50%);
+width:64px;height:64px;border-radius:50%;border:1px solid #fff5;background:#09091499;
+color:#ff9acb;font-size:20px;cursor:pointer;backdrop-filter:blur(8px);transition:.3s}
+.centerPlay:hover{transform:translate(-50%,-50%) scale(1.08)}
+.controls{position:absolute;bottom:29px;left:50%;transform:translateX(-50%);
+width:min(520px,82vw);display:flex;align-items:center;gap:12px;z-index:6}
+#play{width:34px;height:34px;border-radius:50%;border:1px solid #ffffff20;background:#ffffff0a;
+color:#ff8fc8;cursor:pointer}
+.track{height:2px;flex:1;background:#ffffff20;cursor:pointer}
+.track span{display:block;width:0;height:100%;background:linear-gradient(90deg,#ff5baa,#6698ff);
+box-shadow:0 0 10px #ff5baa}
+#time{font-size:11px;color:#8b8899;min-width:34px}
+.hint{position:absolute;bottom:6px;margin:0;font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+color:#5e5b6c}
+.noise{position:absolute;inset:0;opacity:.04;pointer-events:none;z-index:10;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@media(max-width:600px){.frame{height:43vh;width:94vw}.title{font-size:15px;left:15px;top:13px}.centerPlay{width:54px;height:54px}}
